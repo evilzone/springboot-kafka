@@ -21,3 +21,14 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 
+
+============================================================================================================ 
+
+starting the kafka server
+bin/kafka-server-start.sh config/server.properties
+
+starting the zookeeper
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+reading message from kafka console
+kafka % bin/kafka-console-consumer.sh --topic kafka_topic --from-beginning --bootstrap-server localhost:9092
